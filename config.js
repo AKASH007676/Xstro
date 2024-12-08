@@ -6,9 +6,9 @@ const require = createRequire(import.meta.url);
 
 const DATABASE_URL = process.env.DATABASE_URL || './database.db';
 const config = {
-	SESSION_ID: process.env.SESSION_ID || '',
+	SESSION_ID: process.env.SESSION_ID || 'XSTRO_00_53_90',
 	PREFIX: process.env.PREFIX || '.',
-	SUDO: process.env.SUDO || '',
+	SUDO: process.env.SUDO || '919064560840',
 	BOT_INFO: process.env.BOT_INFO || '𝙰𝚜𝚝𝚛𝚘;𝚇𝚜𝚝𝚛𝚘-𝙱𝚘𝚝',
 	STICKER_PACK: process.env.STICKER_PACK || 'xʂƚɾσ;Ⴆσƚ',
 	HEROKU_API_KEY: process.env.HEROKU_API_KEY || '',
@@ -17,10 +17,10 @@ const config = {
 	UN_MUTE_MSG: process.env.UN_MUTE_MSG || '```Group is now unmuted, due to AutoUnMute```',
 	READ_CMD: process.env.READ_CMD || true,
 	AUTO_READ: process.env.AUTO_READ || false,
-	AUTO_STATUS_READ: process.env.AUTO_STATUS_READ || false,
+	AUTO_STATUS_READ: process.env.AUTO_STATUS_READ || true,
 	CMD_REACT: process.env.CMD_REACT || true,
 	MODE: process.env.MODE || 'private',
-	TIME_ZONE: process.env.TZ || process.env.TIME_ZONE || 'Africa/Lagos',
+	TIME_ZONE: process.env.TZ || process.env.TIME_ZONE || 'Asia/Kolkata',
 	VERSION: require('./package.json').version,
 	DATABASE:
 		DATABASE_URL === './database.db'
