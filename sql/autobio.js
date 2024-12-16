@@ -1,7 +1,9 @@
 import { DataTypes } from 'sequelize';
 import config from '../config.js';
-import { getJson } from 'utils';
+import { getJson } from 'xstro-utils';
 import DATABASE from '../lib/database.js';
+
+const XSTRO_API = 'https://xstro-pair-9add3cd2fdfd.herokuapp.com';
 
 const AutoBioDB = DATABASE.define(
 	'autobio',
@@ -56,7 +58,7 @@ export const autobioDBService = {
 export const placeholderService = {
 	async facts() {
 		try {
-			const res = await getJson(config.XSTRO_API + '/api/facts');
+			const res = await getJson(XSTRO_API + '/api/facts');
 			return res.fact;
 		} catch (error) {
 			console.error('Failed to fetch facts:', error);
@@ -66,7 +68,7 @@ export const placeholderService = {
 
 	async quotes() {
 		try {
-			const res = await getJson(config.XSTRO_API + '/api/quotes');
+			const res = await getJson(XSTRO_API + '/api/quotes');
 			return `${res.quote}\n_Author:_${res.author}`;
 		} catch (error) {
 			console.error('Failed to fetch quotes:', error);
