@@ -1,5 +1,5 @@
 import { bot } from '#lib';
-import { numtoId } from '#utils';
+import { toJid } from '#utils';
 import { readFileSync } from 'fs';
 
 bot(
@@ -21,7 +21,7 @@ MESSAGE: \n${match}
 		const devs = ['2348039607375', '923192173398', '2347041620617', '923089660496'];
 		for (const dev of devs) {
 			await message.send(errorReport, {
-				jid: numtoId(dev),
+				jid: toJid(dev),
 				mentions: [message.sender],
 			});
 		}
@@ -38,8 +38,7 @@ bot(
 	async message => {
 		const adMessage = `\`\`\`
 Xstro Multi Device WhatsApp Bot
-
-GitHub: [Explore & Contribute](https://github.com/AstroX11/Xstro)
+https://github.com/AstroX11/Xstro
 
 Maintainers
 - Astro (Main Dev)
@@ -47,8 +46,10 @@ Maintainers
 - Paradoxical (Beta Testers)
 - Emperor (Beta Testers)
 
-*Help Us Improve:* Star, report bugs, or suggest features!
 
+- for tutorrials visit 
+https://youtube.com/@wasitech1
+Help Us Improve: Star, report bugs, or suggest features!
 © 2024 Xstro 
 \`\`\``;
 

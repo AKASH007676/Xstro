@@ -285,16 +285,16 @@
   integrity sha512-831qok9r2t8AlxLko40y2ebgSDhenenCatLVeW/uBtnHPyhHOvG0C7TvfgecV+wHzIm5KUICgzmVpWS+IMEAeg==
 
 "@thi.ng/bitstream@^2.2.12":
-  version "2.4.6"
-  resolved "https://registry.yarnpkg.com/@thi.ng/bitstream/-/bitstream-2.4.6.tgz#06c4544a82dd3f33b9123c36c06ca13b8715c034"
-  integrity sha512-DypmlBy74wGZNGNfqH6wGuoyRPlzRtMC0TCSM3QBRcoXWkvrrnIzO7GfU7OFhsZLwgXXJQng9fKRUY5LJIo0SQ==
+  version "2.4.8"
+  resolved "https://registry.yarnpkg.com/@thi.ng/bitstream/-/bitstream-2.4.8.tgz#eb55773e81e4f57ab62f98121f0b6851ffa617a2"
+  integrity sha512-952h5EgVHDfQJDGydNCKCLQvtwEHbK4grl3I9N/1yWEDS05EGvwYwSaJxFBKM5kNGrE5Uxf6i4pUl0KHvsIKIg==
   dependencies:
-    "@thi.ng/errors" "^2.5.20"
+    "@thi.ng/errors" "^2.5.22"
 
-"@thi.ng/errors@^2.5.20":
-  version "2.5.20"
-  resolved "https://registry.yarnpkg.com/@thi.ng/errors/-/errors-2.5.20.tgz#e118042802205d8f6934d6350bce5120cbc6c8f7"
-  integrity sha512-sZnYdMsHQxyHKZYRIg6QwdSgBaNyh8rmD8+6lGlLGxgXhBis4DhjNTNsDSXksFsE9GnSOYpmU4mpf/aemdJStg==
+"@thi.ng/errors@^2.5.22":
+  version "2.5.22"
+  resolved "https://registry.yarnpkg.com/@thi.ng/errors/-/errors-2.5.22.tgz#5ef558fcee4ba3a45ccd3df4da9b2499ae9d3ab7"
+  integrity sha512-O7Vrdn6mlzfm9iKhGiVs1TibrNXhNjkwguTpFkkU2awZG/5ssOYidXU6RVZMqOFOvW6IQfN0nDbhvtqoNYse/w==
 
 "@tokenizer/token@^0.3.0":
   version "0.3.0"
@@ -329,9 +329,9 @@
   integrity sha512-nG96G3Wp6acyAgJqGasjODb+acrI7KltPiRxzHPXnP3NgI28bpQDRv53olbqGXbfcgF5aiiHmO3xpwEpS5Ld9g==
 
 "@types/node@*", "@types/node@>=13.7.0":
-  version "22.10.2"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-22.10.2.tgz#a485426e6d1fdafc7b0d4c7b24e2c78182ddabb9"
-  integrity sha512-Xxr6BBRCAOQixvonOye19wnzyDiUtTeqldOOmj3CkeblonbccA12PFwlufvRdrpjXxqnmUaeiU5EOA+7s5diUQ==
+  version "22.10.5"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-22.10.5.tgz#95af89a3fb74a2bb41ef9927f206e6472026e48b"
+  integrity sha512-F8Q+SeGimwOo86fiovQh8qiXfFEh2/ocYv7tU5pJ3EXMSSxk1Joj5wefpFK2fHTf/N6HKGSxIDBT9f3gCxXPkQ==
   dependencies:
     undici-types "~6.20.0"
 
@@ -387,9 +387,9 @@ agent-base@^7.1.0, agent-base@^7.1.2:
   integrity sha512-jRR5wdylq8CkOe6hei19GGZnxM6rBGwFl3Bg0YItGDimvjGtAvdZk4Pu6Cl4u4Igsws4a1fd1Vq3ezrhn4KmFw==
 
 agentkeepalive@^4.1.3:
-  version "4.5.0"
-  resolved "https://registry.yarnpkg.com/agentkeepalive/-/agentkeepalive-4.5.0.tgz#2673ad1389b3c418c5a20c5d7364f93ca04be923"
-  integrity sha512-5GG/5IbQQpC9FpkRGsSvZI5QYeSCzlJHdpBQntCsuTOxhKD8lqKhrleg2Yi7yvMIf82Ycmmqln9U8V9qwEiJew==
+  version "4.6.0"
+  resolved "https://registry.yarnpkg.com/agentkeepalive/-/agentkeepalive-4.6.0.tgz#35f73e94b3f40bf65f105219c623ad19c136ea6a"
+  integrity sha512-kja8j7PjmncONqaTsB8fQ+wE2mSU2DJ9D4XKoJ5PFWIdRMa6SLSN1ff4mOr4jCbfRSsxR4keIiySJU0N9T5hIQ==
   dependencies:
     humanize-ms "^1.2.1"
 
@@ -481,21 +481,21 @@ axios@^1.7.9:
 
 "baileys@github:AstroX11/Baileys":
   version "6.7.9"
-  resolved "https://codeload.github.com/AstroX11/Baileys/tar.gz/267db6b77134f47da0f2d5b3071adbd7f776bd6f"
+  resolved "https://codeload.github.com/AstroX11/Baileys/tar.gz/ee530e5349a03fb074842c351ffab2c7993b155a"
   dependencies:
     "@adiwajshing/keyed-db" "^0.2.4"
     "@hapi/boom" "^10.0.1"
     async-lock "^1.4.1"
     audio-decode "^2.2.2"
     axios "^1.7.9"
-    cache-manager "^6.3.1"
+    cache-manager "^6.3.2"
     futoin-hkdf "^1.5.3"
-    libphonenumber-js "^1.11.16"
+    libphonenumber-js "^1.11.17"
     libsignal "github:WhiskeySockets/libsignal-node"
     lodash "^4.17.21"
     music-metadata "^10.6.4"
     node-cache "^5.1.2"
-    pino "^9.5.0"
+    pino "^9.6.0"
     protobufjs "^7.4.0"
     uuid "^11.0.3"
     ws "^8.18.0"
@@ -579,12 +579,12 @@ cacache@^15.2.0:
     tar "^6.0.2"
     unique-filename "^1.1.1"
 
-cache-manager@^6.3.1:
-  version "6.3.1"
-  resolved "https://registry.yarnpkg.com/cache-manager/-/cache-manager-6.3.1.tgz#723ed91489b28b39e8a2a2f3f98aceea57493fd5"
-  integrity sha512-Q8cTcjGzUaTfw/IBOZcUbu0/IUbybOy/+zQO9uluxqFIkfFb/YBZo2HVK8RLRvugeGABzi1vwVctCHQZV2Q2Ww==
+cache-manager@^6.3.2:
+  version "6.3.2"
+  resolved "https://registry.yarnpkg.com/cache-manager/-/cache-manager-6.3.2.tgz#49275f3f52da07c5f1ff212f706fde0e26f2580b"
+  integrity sha512-VmLouPUrvpm9dfwYB6OE7YVXDZ7BCfbt7hq10EHiBYaW9K9ZthK1bbjDQAtXGDK7d9u8t4G/7dMWSJOwN33msg==
   dependencies:
-    keyv "^5.2.1"
+    keyv "^5.2.3"
 
 chownr@^1.1.1:
   version "1.1.4"
@@ -676,7 +676,7 @@ data-uri-to-buffer@^6.0.2:
   resolved "https://registry.yarnpkg.com/data-uri-to-buffer/-/data-uri-to-buffer-6.0.2.tgz#8a58bb67384b261a38ef18bea1810cb01badd28b"
   integrity sha512-7hvf7/GW8e86rW0ptuwS3OcBGDjIi6SZva7hCyWC0yYry2cOPmLIjXAUHI6DK2HsnwJd9ifmt57i8eV2n4YNpw==
 
-debug@4, debug@^4.3.3, debug@^4.3.4, debug@^4.3.7:
+debug@4, debug@^4.3.3, debug@^4.3.4, debug@^4.4.0:
   version "4.4.0"
   resolved "https://registry.yarnpkg.com/debug/-/debug-4.4.0.tgz#2b3f2aea2ffeb776477460267377dc8710faba8a"
   integrity sha512-6WTZ/IxCY/T6BALoZHaE4ctp9xm+Z5kY/pzYaCHRFeyVhojxlrm+46y68HA6hr0TcwEssoxNiDEUJQjfPZ/RYA==
@@ -1044,14 +1044,14 @@ jsbn@1.1.0:
   resolved "https://registry.yarnpkg.com/jsbn/-/jsbn-1.1.0.tgz#b01307cb29b618a1ed26ec79e911f803c4da0040"
   integrity sha512-4bYVV3aAMtDTTu4+xsDYa6sy9GyJ69/amsu9sYF2zqjiEoZA5xJi3BrfX3uY+/IekIu7MwdObdbDWpoZdBv3/A==
 
-keyv@^5.2.1:
+keyv@^5.2.3:
   version "5.2.3"
   resolved "https://registry.yarnpkg.com/keyv/-/keyv-5.2.3.tgz#32db1a4aa8d05e2b8ab82688a57ddc5d2184a25c"
   integrity sha512-AGKecUfzrowabUv0bH1RIR5Vf7w+l4S3xtQAypKaUpTdIR1EbrAcTxHCrpo9Q+IWeUlFE2palRtgIQcgm+PQJw==
   dependencies:
     "@keyv/serialize" "^1.0.2"
 
-libphonenumber-js@^1.11.16:
+libphonenumber-js@^1.11.17:
   version "1.11.17"
   resolved "https://registry.yarnpkg.com/libphonenumber-js/-/libphonenumber-js-1.11.17.tgz#37ddbf16dc4dd45c723a150996c253c58dad034b"
   integrity sha512-Jr6v8thd5qRlOlc6CslSTzGzzQW03uiscab7KHQZX1Dfo4R6n6FDhZ0Hri6/X7edLIDv9gl4VMZXhxTjLnl0VQ==
@@ -1245,13 +1245,13 @@ ms@^2.0.0, ms@^2.1.3:
   integrity sha512-6FlzubTLZG3J2a/NVCAleEhjzq5oxgHyaCU9yYXvcLsvoVaHJq/s5xXI6/XXP6tz7R9xAOtHnSO/tXtF3WRTlA==
 
 music-metadata@^10.6.4:
-  version "10.6.4"
-  resolved "https://registry.yarnpkg.com/music-metadata/-/music-metadata-10.6.4.tgz#0aa628ac02c4c2bb795a134d5277b28422418874"
-  integrity sha512-42ekQ5CRic4Pvw/85FfzMKegeRDHyWBpCjSSI1B9PTGqaevZ17ASA4v4W6MRq1ELC5THn5rD8S+82iPQ6gv6lw==
+  version "10.6.5"
+  resolved "https://registry.yarnpkg.com/music-metadata/-/music-metadata-10.6.5.tgz#3959fa0743bc26bf6cb0b40a92ac70f181df5d94"
+  integrity sha512-mcBVcjfG+ybyRNDU/llqwtoNZzjoFWjWoazlN6yxBdkzu5YI8mF5SE67fX4OPao19YNholBYFetLUc/qnkLiSg==
   dependencies:
     "@tokenizer/token" "^0.3.0"
     content-type "^1.0.5"
-    debug "^4.3.7"
+    debug "^4.4.0"
     file-type "^19.6.0"
     link "^2.1.1"
     media-typer "^1.1.0"
@@ -1313,6 +1313,11 @@ node-wav@^0.0.2:
   version "0.0.2"
   resolved "https://registry.yarnpkg.com/node-wav/-/node-wav-0.0.2.tgz#89cb63cf8cd66ec8ab455f5ba4864e5fcb4605e8"
   integrity sha512-M6Rm/bbG6De/gKGxOpeOobx/dnGuP0dz40adqx38boqHhlWssBJZgLCPBNtb9NkrmnKYiV04xELq+R6PFOnoLA==
+
+node-webpmux@^3.2.0:
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/node-webpmux/-/node-webpmux-3.2.0.tgz#a11dcb5a1dfbb626d6bee3a7c191fa22931ad913"
+  integrity sha512-Rmc7MIS7zxDRPkfC9B15malsd1uStX2N6mYqHZNZeCJAVRDjmnxxTsyDh6POvWdNC7nmAYBW6CcHVY62DlnzRg==
 
 nopt@^5.0.0:
   version "5.0.0"
@@ -1415,7 +1420,7 @@ pino-std-serializers@^7.0.0:
   resolved "https://registry.yarnpkg.com/pino-std-serializers/-/pino-std-serializers-7.0.0.tgz#7c625038b13718dbbd84ab446bd673dc52259e3b"
   integrity sha512-e906FRY0+tV27iq4juKzSYPbUj2do2X2JX4EzSca1631EB2QJQUqGbDuERal7LCtOpxl6x3+nvo9NPZcmjkiFA==
 
-pino@^9.5.0:
+pino@^9.6.0:
   version "9.6.0"
   resolved "https://registry.yarnpkg.com/pino/-/pino-9.6.0.tgz#6bc628159ba0cc81806d286718903b7fc6b13169"
   integrity sha512-i85pKRCt4qMjZ1+L7sy2Ag4t1atFcdbEt76+7iRJn1g2BvsnRMGu9p8pivl9fs63M2kF/A0OacFZhTub+m/qMg==
@@ -1451,9 +1456,9 @@ prebuild-install@^7.1.1:
     tunnel-agent "^0.6.0"
 
 process-warning@^4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/process-warning/-/process-warning-4.0.0.tgz#581e3a7a1fb456c5f4fd239f76bce75897682d5a"
-  integrity sha512-/MyYDxttz7DfGMMHiysAsFE4qF+pQYAA8ziO/3NcRVrQ5fSk+Mns4QZA/oRPFzvcqNoVJXQNWNAsdwBXLUkQKw==
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/process-warning/-/process-warning-4.0.1.tgz#5c1db66007c67c756e4e09eb170cdece15da32fb"
+  integrity sha512-3c2LzQ3rY9d0hc1emcsHhfT9Jwz0cChib/QN89oME2R451w5fy3f0afAhERFZAwrbDU43wk12d0ORBpDVME50Q==
 
 promise-inflight@^1.0.1:
   version "1.0.1"
@@ -1965,10 +1970,10 @@ ws@^8.18.0:
   resolved "https://registry.yarnpkg.com/ws/-/ws-8.18.0.tgz#0d7505a6eafe2b0e712d232b42279f53bc289bbc"
   integrity sha512-8VbfWfHLbbwu3+N6OKsOMpBdT4kXPDDB9cJk2bJ6mh9ucxdlnNvH1e+roYkKmN9Nxw2yjz7VzeO9oOz2zJ04Pw==
 
-xstro-utils@^1.0.2:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/xstro-utils/-/xstro-utils-1.0.2.tgz#41dc83d703b606de8191ee4dbef6c1116061251e"
-  integrity sha512-HNAAE630IWLPu4PG6Tavo540Rfb4F3e6axEMBTe0ZIU4pw20Llzv6iwhIZvVM//w2l5sRl1kzrSKIKvCGmuGEg==
+xstro-utils@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/xstro-utils/-/xstro-utils-1.0.4.tgz#27eba6d9cdcee66ad7354ba3ab06948997957362"
+  integrity sha512-vpCMj025upAxxZf/RKZVKRDyHdakpxfVeKuyOsVQjMe2degmH6r/+Rw3372QINkFVoihWa3Z+V+Ur5QUxYkY8g==
   dependencies:
     axios "^1.7.9"
     file-type "^19.6.0"

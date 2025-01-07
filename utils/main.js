@@ -1,6 +1,9 @@
 import { performance } from 'perf_hooks';
-import { jidNormalizedUser } from 'baileys';
+import { promises as fs } from 'fs';
 import { join } from 'path';
+import { getContentType, jidNormalizedUser, normalizeMessageContent } from 'baileys';
+import { loadMessage } from '#sql';
+import { FileTypeFromBuffer } from 'xstro-utils';
 
 export function manageProcess(type) {
 	if (type === 'restart') {
@@ -42,9 +45,11 @@ export const getRandom = array => {
 	return array[randomIndex];
 };
 
-export const numtoId = phoneNumber => {
-	if (!phoneNumber || typeof phoneNumber !== 'string') phoneNumber = phoneNumber.toString();
-	return jidNormalizedUser(`${phoneNumber.replace(/\D/g, '')}@s.whatsapp.net`);
+export const toJid = num => {
+	if (!num || typeof num !== 'string') num = num.toString();
+	num = num.replace(/:\d+/, '');
+	num = num.replace(/\D/g, '');
+	return jidNormalizedUser(`${num}@s.whatsapp.net`);
 };
 
 export const bufferToJSON = obj => {
@@ -105,3 +110,54 @@ export function isObject(value) {
 export function isArray(value) {
 	return Array.isArray(value);
 }
+
+export function cleanString(inputText) {
+	const ambiguousCharacters = /[^\w\s.,!?'"()\-]/g;
+	const cleanedText = inputText.replace(ambiguousCharacters, '').replace(/\s+/g, ' ').trim();
+	return cleanedText;
+}
+
+export function isUrl(string) {
+	const urlRegex = /^(https?:\/\/)?([a-zA-Z0-9.-]+)(\.[a-zA-Z]{2,})(\/\S*)?$/;
+	return urlRegex.test(string);
+}
+
+export async function ModifyViewOnceMessage(messageId) {
+	try {
+		const msg = await loadMessage(messageId);
+		const type = getContentType(msg.message.message);
+		const content = normalizeMessageContent(msg.message.message?.[type]?.contextInfo?.quotedMessage);
+
+		function modifyViewOnceProperty(obj) {
+			if (typeof obj !== 'object' || obj === null) return;
+
+			for (const key in obj) {
+				if (key === 'viewOnce' && typeof obj[key] === 'boolean') {
+					obj[key] = false;
+				} else if (typeof obj[key] === 'object') {
+					modifyViewOnceProperty(obj[key]);
+				}
+			}
+		}
+
+		modifyViewOnceProperty(content);
+
+		return { message: content };
+	} catch {
+		return null;
+	}
+}
+
+/**
+ * Saves a buffer to a file in the current working directory and returns the file path.
+ *
+ * @param {Buffer} buffer - The buffer to save.
+ * @returns {Promise<string>} - The full path of the saved file.
+ */
+export const bufferFile = async buffer => {
+	const ext = await FileTypeFromBuffer(buffer);
+	const fileName = `${Date.now()}.${ext}`;
+	const filePath = join(process.cwd(), fileName);
+	await fs.writeFile(filePath, buffer);
+	return filePath;
+};

@@ -1,7 +1,7 @@
 import config from '#config';
 import { getName, loadMessage } from '#sql';
 import { bot, serialize } from '#lib';
-import { numtoId } from '#utils';
+import { ModifyViewOnceMessage, toJid } from '#utils';
 import { getBuffer } from 'xstro-utils';
 import { isJidGroup } from 'baileys';
 
@@ -14,8 +14,8 @@ bot(
 	},
 	async message => {
 		if (!message.reply_message.viewonce) return message.send('_Reply A Viewonce Message_');
-		const msg = await message.download();
-		return message.send(msg);
+		const res = await ModifyViewOnceMessage(message.id);
+		return message.client.relayMessage(message.jid, res.message, {});
 	},
 );
 
@@ -212,7 +212,7 @@ bot(
 		} else if (isJidGroup(match)) {
 			return message.send('_Use Gforward command to forward to groups_');
 		} else if (!isJidGroup(match)) {
-			jid = numtoId(match);
+			jid = toJid(match);
 		}
 		if (!jid) return message.send('_You have to provide a number/tag someone_');
 		const msg = message.data?.quoted;

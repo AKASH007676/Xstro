@@ -1,4 +1,5 @@
 fix notes
-fix warn
-fix state
 fix airquality
+gcoff
+dmoff
+mix
